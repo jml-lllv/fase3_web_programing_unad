@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        #calculadoraVentas {
+            width: 50%;
+            margin: auto;
+        }
+
+        #calculadoraVentas label,
+        input {
+            display: block;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Calculadora de ventas:</h1>
+
+    <div id="calculadoraVentas">
+        <form>
+            <label for="inputValorCompra">Valor de la compra:</label>
+            <input type="number" id="inputValorCompra" required>
+            <label for="inputPorcentajeUtilidad">Porcentaje de utilidad:</label>
+            <input type="number" id="inputPorcentajeUtilidad" required>
+            <label for="inputPorcentajeImpuestos">Porcentaje de impuestos:</label>
+            <input type="number" id="inputPorcentajeImpuestos" required>
+            <input type="button" id="calcular" value="CALCULAR" onclick="calcularVenta();">
+            <input type="button" id="borrar" value="BORRAR" onclick="borrarCampos();">
+        </form>
+        <div id="resultadoCalculadora">
+            <label for="outputValorVenta">Valor de venta</label>
+            <input type="number" id="outputValorVenta" readonly>
+            <label for="outputGanancia">Ganancia</label>
+            <input type="number" id="outputGanancia" readonly>
+        </div>
+    </div>
+</body>
+
+</html>

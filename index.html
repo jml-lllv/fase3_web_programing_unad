@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Conversor de unidades</h2>
+        <div class="fila">
+            <span>Convertir de: </span>
+            <select name="unidad1" id="unidad1">
+                <option value="byte">Byte</option>
+                <option value="kilobyte">Kilobyte</option>
+                <option value="megabyte">Megabyte</option>
+                <option value="gigabyte">Gigabyte</option>
+                <option value="terabyte">Terabyte</option>
+            </select>
+
+            <span> a </span>
+            <select name="unidad2" id="unidad2">
+                <option value="byte">Byte</option>
+                <option value="kilobyte">Kilobyte</option>
+                <option value="megabyte">Megabyte</option>
+                <option value="gigabyte">Gigabyte</option>
+                <option value="terabyte">Terabyte</option>
+            </select>
+
+            <input type="number" id="valor" placeholder="Ingrese valor">
+
+            <div class="resultado" id="resultado">
+                - -
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
